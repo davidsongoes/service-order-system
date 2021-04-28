@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,6 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'service-order-system';
-  faCoffee = faCoffee;
+  title = 'Planejamento - TCA';
+  planejamento_tca_url: string = '/';
 }

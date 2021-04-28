@@ -5,6 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Layout
+import { BaseWrapperModule } from './shared/components/base-wrapper/base-wrapper.module';
+
 // FontAwesome
 import {
   FaIconLibrary,
@@ -21,6 +24,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
     BrowserAnimationsModule,
     AppRoutingModule,
     FontAwesomeModule,
+    BaseWrapperModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
