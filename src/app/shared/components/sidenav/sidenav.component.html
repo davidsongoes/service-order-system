@@ -9,14 +9,14 @@
 >
   <div class="l-sidenav p-p-3">
     <button class="l-sidenav__btn" (click)="toggleNav()">
-      <div class="p-d-flex p-jc-end p-mr-1">
+      <div *ngIf="_isHidden" class="p-d-flex p-jc-end p-mr-1">
         <fa-icon
           *ngIf="_isHidden"
           [icon]="['fas', 'ellipsis-v']"
           @fade
         ></fa-icon>
       </div>
-      <div class="p-d-flex p-jc-end">
+      <div *ngIf="!_isHidden" class="p-d-flex p-jc-end">
         <fa-icon
           *ngIf="!_isHidden"
           [icon]="['fas', 'arrow-left']"

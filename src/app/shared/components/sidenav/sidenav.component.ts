@@ -23,6 +23,7 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {}
 
   toggleNav() {
+    console.log(window.getSelection());
     console.log(this._isHidden);
     this._isHidden = !this._isHidden;
   }
